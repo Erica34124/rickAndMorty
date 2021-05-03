@@ -1,6 +1,6 @@
 # rickAndMorty
  Site para processo seletivo
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -47,11 +47,23 @@
   </div>
 <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle vermelho" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      pesquisa
+      Nome
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Nome</a>
       <a class="dropdown-item" href="#">Status</a>
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle azul" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Nome
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="personagens.html">Personagens</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
       <a class="dropdown-item" href="#">Gênero</a>
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="#">Separated link</a>
@@ -60,17 +72,27 @@
   <!-- Example single danger button -->
 <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle verde" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Teste
+      Status
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="teste.html">Teste</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
+      <a class="dropdown-item" href="teste.html">Vivo</a>
+      <a class="dropdown-item" href="#">Morto</a>
+      <a class="dropdown-item" href="#">Desconhecido</a>
+      
     </div>
   </div>
              
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle amarelo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Gênero
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="teste.html">Homem</a>
+      <a class="dropdown-item" href="#">Mulher</a>
+      <a class="dropdown-item" href="#">Desconhecido</a>
+      
+    </div>
+  </div>
     </header>
     <main class="imagemFundo"><h1></h1></main>
     <section> teste section</section>
@@ -78,5 +100,8 @@
 
     
 </body>
-</html>
+<script src="main.js"></script>>
+    
 
+
+</html>
