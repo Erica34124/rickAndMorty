@@ -1,0 +1,18 @@
+.dropdown{
+position: relative;
+}
+.dropdown-content  {
+display:none;
+position: absolute;
+background-color: #333;
+z-index:2;}
+.espaco{
+    padding: 16px;
+}
+.azul{background-color: blue;}
+.amarelo{background-color: rgb(235, 252, 8);}
+.verde{background-color: rgb(32, 199, 60);}
+.vermelho{background-color: rgb(218, 23, 23);}
+.laranja{background-color: rgb(233, 146, 15);}
+.rosa{background-color: rgb(255, 0, 179);}
+
