@@ -15,4 +15,17 @@ z-index:2;}
 .vermelho{background-color: rgb(218, 23, 23);}
 .laranja{background-color: rgb(233, 146, 15);}
 .rosa{background-color: rgb(255, 0, 179);}
+.bege{background-color: rgb(240, 241, 144);}
+
+
+.imagemFundo{
+  height: 480px;
+  background-image: url(imagens/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align:center ;
+  border: 64px;
+}
 
