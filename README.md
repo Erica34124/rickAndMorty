@@ -50,6 +50,7 @@
       Nome
     </button>
     <div class="dropdown-menu">
+<<<<<<< HEAD
       <a class="dropdown-item" href="#">Nome</a>
       <a class="dropdown-item" href="#">Status</a>
       <div class="btn-group">
@@ -65,6 +66,11 @@
         </div>
       </div>
       <a class="dropdown-item" href="#">Gênero</a>
+=======
+      <a class="dropdown-item" href="#">pesquisa</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+>>>>>>> parent of 48cd1aa (andamento)
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="#">Separated link</a>
     </div>
