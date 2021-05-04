@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body class="bege">
     <header class="espaco" >
@@ -22,12 +23,13 @@
       Home
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item active" href="#">home</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
+      <ul>
+        <li><a class="dropdown-item active" href="#">home</a></li>
+      <li><a class="dropdown-item" href="pagina1.html">Another action</a></li>
+      <li><a class="dropdown-item" href="paginas.html">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</li></ul>
+      
+        </div>
   </div>
   <!-- Example single danger button -->
  
@@ -36,44 +38,125 @@
       Personagens
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="personagens.html">Personagens</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
+    <ul>
+      <li><a class="dropdown-item" href="#">Personagens</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+        </div>
   </div>
-<div class="btn-group">
-    <button type="button" class="btn btn-danger dropdown-toggle vermelho" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      pesquisa
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">pesquisa</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
+ <!-- Example single danger button -->
+
+      <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle azul" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Nome
+        </button>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+
+        </div>
+      </div>
+      
   <!-- Example single danger button -->
 <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle verde" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Teste
+      Status
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="teste.html">Teste</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
+      <ul>
+        <li><a class="dropdown-item" href="teste.html">Vivo</a></li>
+        <li><a class="dropdown-item" href="paginas.html">Morto</a></li>
+        <li><a class="dropdown-item" href="paginas.html">Desconhecido</a></li>
+      </ul>
+      
+      
     </div>
   </div>
              
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle amarelo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Gênero
+    </button>
+    <div class="dropdown-menu">
+      <ul>
+        <li><a class="dropdown-item" href="teste.html">Homem</a></li>
+        <li><a class="dropdown-item" href="#">Mulher</a></li>
+        <li><a class="dropdown-item" href="#">Desconhecido</a></li>
+      </ul>
+   
+         
+      
+    </div>
+  </div>
     </header>
     <main class="imagemFundo"><h1></h1></main>
     <section> teste section</section>
     <footer> teste footer</footer>
+    <table id="tabela"></table>
+    <script src="pok.js"></script>>  
+    <form method="post" action="/enviar" name="formul">
+      <div id="form"></div>
+  </form> 
+  <section class = " container ">
+    <h1  class = " title " > Cadastro </h1>
+    <div  class = " row ">
+        <div  class = " inputbox ">
+            <input  type = " text " id = " nome " obrigatório>
+            <label  for = " nome " > Nome </label >
+        </div >
+       <div class = " inputbox ">
+            <input type = " text " id = " email " obrigatório>
+            <label  for = " email " > Email </label >
+        </div >
+    </div>
+    <div  class = " row " >
+        <div class = " inputbox ">
+            <input  type = " text " id = " cep "   obrigatório >
+            <label  for = " cep " > CEP </label >
+        </div >
 
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger dropdown-toggle verde" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Status
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" 
+            action="" class="search">
+              <input type="search" class="search-input" placeholder="Digite sua busca">
+              <button class="search-button">Search</button>
+            </form>
+        
+            <section class="personagens">
+            </section>
+            
+            href="teste.html">Vivo</a>
+            <a class="dropdown-item" href="#">Morto</a>
+            <a class="dropdown-item" href="#">Desconhecido</a>
+            
+          </div>
+        </div>
+
+
+      </section>
+      <form action="" class="search">
+        <input type="search" class="search-input" placeholder="Digite sua busca">
+        <button class="search-button">Search</button>
+      </form>
+  
+      <section class="personagens">
+      </section>
+      <span class="error">Not Found!</span>
+    </main>
+    
+    
     
 </body>
+
+    
+
+
 </html>
