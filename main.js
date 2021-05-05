@@ -1,4 +1,4 @@
-$.getJSON('https://fipe-parallelum.rhcloud.com/api/v1/carros/marcas', function(data) {
+/*$.getJSON('https://fipe-parallelum.rhcloud.com/api/v1/carros/marcas', function(data) {
 
     var select = '<select name="modelos">\
                   <option>Selecione...</option>';
@@ -10,13 +10,18 @@ $.getJSON('https://fipe-parallelum.rhcloud.com/api/v1/carros/marcas', function(d
     select += '</select>';
     $('#form').html(select);
 
-});
+});*/
 
 
+function populateList(){
+    const data = Array.from({length: 40})
+    .map((_,i) =>   '<div class="item">item ${(' + (i+1) + ')}</div>')
+
+console.log(data)
+}
 
 
-
-
+populateList()
 
 
 
