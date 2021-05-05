@@ -15,9 +15,11 @@
 
 function populateList(){
     const data = Array.from({length: 40})
-    .map((_,i) =>   '<div class="item">item ${(' + (i+1) + ')}</div>')
+    .map((_,i) =>   '<div class="item">item ${(' + (i+1) + ')}</div>') 
+    const list = document.querySelector('#paginate .list')
+    list.innerHTML = data
 
-console.log(data)
+  console.log(data)
 }
 
 
