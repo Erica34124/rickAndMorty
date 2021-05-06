@@ -67,10 +67,10 @@ footer{
   position: absolute;
   bottom: 0%;
   width: 100%;
-  margin: 4px 8px 4px 0;
+  margin: 4px 8px 4px 4px;
   border: 8px;
   z-index: 9999;
-  
+  display: inline-block;
   
   
 }
@@ -247,4 +247,8 @@ margin-top: 8px;
 #paginate .pagination div.numbers div:hover
 #paginate .pagination div.numbers div.active{
 color: var(--primary);
+}
+label{
+  display: inline-block;
+  width:10px;
 }
