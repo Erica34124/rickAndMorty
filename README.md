@@ -1,5 +1,3 @@
-# rickAndMorty
- Site para processo seletivo
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,6 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="pok.js"></script>
+    
 </head>
 <body class="bege">
     <header class="espaco" >
@@ -24,66 +24,80 @@
       Home
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item active" href="#">home</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
+      <ul>
+        <li><a class="dropdown-item" href="home.html">home</a></li>
+        <li><a class="dropdown-item" href="paginas.html">Pagina 0</a></li>
+        <li><a class="dropdown-item" href="pagina1.html">Pagina 1</a></li>
+        <li><a class="dropdown-item" href="hometxt.html">Hometxt</a></li>
+        <li><a class="dropdown-item" href="pesquisa.html">Pesquisa</a></li>
+        <li><a class="dropdown-item" href="teste.html">Teste</a></li>
+        <li><a class="dropdown-item" href="personagens.html">Personagens</a></li>  
+      </ul>
+        </div>
   </div>
   <!-- Example single danger button -->
  
-<div class="btn-group">
+  <!--<div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle azul" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Personagens
+      Índice
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="personagens.html">Personagens</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
+    <ul>
+      <li><a class="dropdown-item" href="home.html">Home</a></li>
+      <li><a class="dropdown-item" href="#">índice</a></li>
+    </ul>
+
+        </div>
+  </div> -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle azul" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      índice
+    </button>
+    <div class="dropdown-menu">
+      <ul>
+      <li><a class="dropdown-item " href="home.html">home</a></li>
+      <li><a class="dropdown-item active" href="paginas.html">Pagina 0</a></li>
+      <li><a class="dropdown-item" href="pagina1.html">Pagina 1</a></li>
+      <li><a class="dropdown-item" href="hometxt.html">Pesquisa</a></li></ul>
+      
+        </div>
   </div>
-<div class="btn-group">
-    <button type="button" class="btn btn-danger dropdown-toggle vermelho" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Nome
-    </button>
-    <div class="dropdown-menu">
-<<<<<<< HEAD
-      <a class="dropdown-item" href="#">Nome</a>
-      <a class="dropdown-item" href="#">Status</a>
+ <!-- Example single danger button -->
+
       <div class="btn-group">
-        <button type="button" class="btn btn-danger dropdown-toggle azul" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Nome
+      <button type="button" class="btn btn-danger dropdown-toggle vermelho" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Personagens
         </button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="personagens.html">Personagens</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
+          <ul>
+            <li><a class="dropdown-item" href="home.html">home</a></li>
+            <li><a class="dropdown-item" href="paginas.html">Pagina 0</a></li>
+            <li><a class="dropdown-item" href="pagina1.html">Pagina 1</a></li>
+            <li><a class="dropdown-item" href="hometxt.html">Hometxt</a></li>
+            <li><a class="dropdown-item" href="pesquisa.html">Pesquisa</a></li>
+            <li><a class="dropdown-item" href="teste.html">Teste</a></li>
+            <li><a class="dropdown-item" href="personagens.html">Personagens</a></li>  
+          </ul>
+
         </div>
       </div>
-      <a class="dropdown-item" href="#">Gênero</a>
-=======
-      <a class="dropdown-item" href="#">pesquisa</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
->>>>>>> parent of 48cd1aa (andamento)
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
+      
   <!-- Example single danger button -->
 <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle verde" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Status
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="teste.html">Vivo</a>
-      <a class="dropdown-item" href="#">Morto</a>
-      <a class="dropdown-item" href="#">Desconhecido</a>
+      <ul>
+        <li><a class="dropdown-item" href="home.html">home</a></li>
+        <li><a class="dropdown-item" href="paginas.html">Pagina 0</a></li>
+        <li><a class="dropdown-item" href="pagina1.html">Pagina 1</a></li>
+        <li><a class="dropdown-item" href="hometxt.html">Hometxt</a></li>
+        <li><a class="dropdown-item" href="pesquisa.html">Pesquisa</a></li>
+        <li><a class="dropdown-item" href="teste.html">Teste</a></li>
+        <li><a class="dropdown-item" href="personagens.html">Personagens</a></li>  
+      </ul>
+      
       
     </div>
   </div>
@@ -93,21 +107,49 @@
       Gênero
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="teste.html">Homem</a>
-      <a class="dropdown-item" href="#">Mulher</a>
-      <a class="dropdown-item" href="#">Desconhecido</a>
+      <ul>
+        <li><a class="dropdown-item" href="home.html">home</a></li>
+        <li><a class="dropdown-item" href="paginas.html">Pagina 0</a></li>
+        <li><a class="dropdown-item" href="pagina1.html">Pagina 1</a></li>
+        <li><a class="dropdown-item" href="hometxt.html">Hometxt</a></li>
+        <li><a class="dropdown-item" href="pesquisa.html">Pesquisa</a></li>
+        <li><a class="dropdown-item" href="teste.html">Teste</a></li>
+        <li><a class="dropdown-item" href="personagens.html">Personagens</a></li>  
+      </ul>
+   
+         
       
     </div>
   </div>
     </header>
     <main class="imagemFundo"><h1></h1></main>
-    <section> teste section</section>
-    <footer> teste footer</footer>
-
+    
+    </main>
+    
+    <footer> 
+      <ul>
+        <article class="card-col">
+            <div >
+                <li><a href="https://github.com/Erica34124" target="_blank"><img src="imagens\github.png" class="rounded float-left icon-footer" alt="">Acesse o Github</a></li>
+              <div class="card-container">
+              </div>
+            </div>
+          </article>
+          <article class="card-col">
+            <div >
+                
+                <li><a href="https://linkedin.com/in/éricarodrigues34124" target="_blank">
+              <img src="imagens\linkedim.png"  class="rounded float-left icon-footer"  alt="">Acesse o linkedin</a></li>
+              <div class="card-container">
+              </div>
+            </div>
+          </article>
+        </ul>
+      </footer>    
     
 </body>
-<script src="main.js"></script>>
-    
+
+
 
 
 </html>
