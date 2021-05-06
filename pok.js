@@ -1,85 +1,116 @@
-// API endpoint --------------------------------------------
-const baseUrl = 'https://rickandmortyapi.com/api';
-
-// Get Elements --------------------------------------------
-const searchInput = getElement('.search-input'),
-      searchButton = getElement('.search-button'),
-      container = getElement('.pokemon'),
-      erroMessage = getElement('.error');
-
-var personagens, // Nome ou numero passado na caixa de busca
-    location, // Responsavel por guardar os dados recebidos da API
-    episodes; // Responsavel por receber o HTML 
-
-// Build Functions --------------------------------------------
-
-// Função para reduzir a escrita na captura de elementos HTML
-function getElement(element) {
-  return document.querySelector(element);
+const consumirAPI = async (graphqlEndpoint, query, variables = {}) => {
+  const response = await fetch(graphqlEndpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query, variables })
+  });
+   /*response = await response.json();
+   return response.data */
+   return response.json();
 }
 
-// Função responsavel por fazer requisições para a API e inserir as respostas na variavel pokemon
-function requestPokeInfo(url, characters) {
-  fetch(url + characters)
-    .then(response => response.json())
-    .then(data => {
-      personagens = data;
-    })
-    .catch(err => console.log(err));
-}
+const GRAPHQL_ENDPOINT = 'https://rickandmortyapi.com/graphql'
 
-// Função responsavel por montar o HTML exibido na pagina
-function createCard () {
-  card = `
-    <div class="pokemon-picture">
-      <img src="${personagens.sprites.front_default}" alt="Sprite of ${characters.name}">
-    </div>
-    <div class="pokemon-info">
-        <h1 class="name">Name: ${characters.name}</h1>
-        <h2 class="number">Nº ${characters.id}</h2>
-        <h3 class="type">Type: ${characters.types.map(item => item.type.name).toString()}</h3>
-        <h3 class="skill">Skills: ${characters.moves.map(item => ' ' + item.move.name).toString()}</h3>
-        <h3 class="weight">Weight: ${characters.weight  / 10}kg</h3>
-        <h3 class="height">Height: ${characters.height  / 10}m</h3>
-    </div>`;
-  return card;
-}
-
-// Função que faz a chamada das principais funções e inicia o app
-function startApp(characters) {
-  requestPokeInfo(baseUrl, characters);
-
-  setTimeout(function () {
-    //Exibe uma mensagem caso o pokemon pesquisado não exista
-    if(pokemon.detail) {
-      erroMessage.style.display = 'block';
-      container.style.display = 'none';
-    }else{
-      erroMessage.style.display = 'none';
-      container.style.display = 'flex';
-      container.innerHTML = createCard();
+const consultarTodosQuery = `
+query {
+  characters(page: 2, filter: { name: "rick" }) {
+    info {
+      count
     }
-  }, 2000);
+    results {
+      name
+    }
+  }
+  location(id: 1) {
+    id
+  }
+  episodesByIds(ids: [1, 2]) {
+    id
+  }
+}
+`;
+
+consumirAPI(GRAPHQL_ENDPOINT, consultarTodosQuery).then(console.log);
+
+const pessoa = `
+query {
+  characters(page: 2, filter: { name: "rick" }) {
+    info {
+      count
+    }
+    results {
+      name
+    }
+  }
+  location(id: 1) {
+    id
+  }
+  episodesByIds(ids: [1, 2]) {
+    id
+  }
+}
+`
+
+consumirAPI(GRAPHQL_ENDPOINT, pessoa, { title: 'Estudar GraphQL' }).then(console.log);
+//criar variavel para consumir api
+
+const listaPessoa = document.querySelector("#pessoa");
+console.log("Consulta",consultarTodosQuery)
+console.log ("pessoa",pessoa);
+
+
+function main(){
+    const pessoa =`
+    query {
+      characters(page: 2, filter: { name: "rick" }) {
+        info {
+          count
+        }
+        results {
+          name
+        }
+      }
+      location(id: 1) {
+        id
+      }
+      episodesByIds(ids: [1, 2]) {
+        id
+      }
+    }
+    `
+    
+requestApi(pessoa).then(res=>showPessoa(res.pessoa));
+
+ listaPessoa.innerHTML=`
+ <ul class="list-unstyled">
+ ${template}
+ </ul>
+ 
+ `;
+}
+function showPessoa(pessoa){
+  let template='';
+    pessoa.forEach(
+    pessoa => 
+   (template += `
+    
+      <li class="media">
+          <img class="mr-3" width="100" src="${pokemon.image}"></img>
+          <div class="media-body">
+              <h5>${pokemom.name}</h5>
+               <button class=" btn btn-secondary btn-sm">Ver detalhes </button>
+          </div>
+      </li>
+      `)
+      );
+      listaPessoa.innerHTML=`
+      <ul class="list-unstyled">
+      ${template}
+      </ul>
+ 
+      `;
 }
 
-console.log(personagens);
-console.log(location);
-console.log(episodes);
+console.log('verificação de pessoa', pessoa)
 
-//const pesqPes = ()=>{
-    //const cep = document.getElementById("characters").nodeValue;
-    //const url
-//}
-
-/* Add Events --------------------------------------------
-searchButton.addEventListener('click', event => {
-  event.preventDefault();
-  pokeName = searchInput.value.toLowerCase();
-  startApp(pokeName);
-  container.classList.add('fade');
-
-  // Reseta o efeito fade removendo a classe fade
-  setTimeout(() => {
-    container.classList.remove('fade');
-  }, 3000);
-}); */
+showPessoa(pessoa)
