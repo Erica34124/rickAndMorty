@@ -12,7 +12,7 @@
 
 });*/
 
-
+/* testando 
 function populateList(){
     const data = Array.from({length: 40})
     .map((_,i) =>   '<div class="item">item ${(' + (i+1) + ')}</div>') 
@@ -29,7 +29,7 @@ populateList()
 
 
 
-
+*/
 
 
 
@@ -148,3 +148,49 @@ function filterOrder() {
     printCharacters(selectedOrder)
 }
 © 2021 GitHub, Inc.*/
+
+//Teste Pokemom
+
+var listaPokemom;
+listaPokemom = document.querySelector("#pokemons");
+function main(){
+  const pokemons = ` 
+  query {
+  characters(page: 2, filter: { name: "rick" }) {
+    info {
+      count
+    }
+    results {
+      name
+    }
+    query {
+  characters(page: 2, filter: { name: "rick" }) {
+    info {
+      count
+    }
+    results {
+      name
+    }
+  }
+  location(id: 1) {
+    id
+  }
+  episodesByIds(ids: [1, 2]) {
+    id
+  }
+}
+ 
+} `;
+requestApi(pokemons).then(res=> console.log(res));}
+
+function showPokemom(pokemons){
+  let template ="";
+  pokemons.forEach(pokemons =>(template+=`
+  <li class="media">
+  <img=class="mr-3" width="100" src="${pokemon.image}">
+  <div class="media-body">
+  <h4>${pokemons.nome}<h5>
+  <button class="btn btn-secondary btn-sm"ver tetalhes></button>" 
+  </div>
+  </li>`))
+}
