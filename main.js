@@ -1,8 +1,9 @@
-$.getJSON('https://fipe-parallelum.rhcloud.com/api/v1/carros/marcas', 
+// get para personagens
+$.getJSON('https://rickandmortyapi.com/', 
 
 function(data) {
 
-    var select = '<select name="modelos">\
+    var select = '<select name="personagens">\
                   <option>Selecione...</option>';
     for (var i in data) {
 
@@ -10,15 +11,17 @@ function(data) {
 
     }
     select += '</select>';
-    $('#form').html(select);
+    $('#personagens').html(select);
+   
+    return select
 
-});*/
+});
 
-/* testando 
+ testando 
 function populateList(){
     const data = Array.from({length: 40})
     .map((_,i) =>   '<div class="item">item ${(' + (i+1) + ')}</div>') 
-    const list = document.querySelector('#paginate .list')
+    const list = document.querySelector('#personagens .list')
     list.innerHTML = data
 
   console.log(data)
@@ -27,17 +30,12 @@ function populateList(){
 
 populateList()
 
+data()
 
 
+//Get para locais
 
-
-/*
-
-
-
-
-
-/*function fazGet(url){
+function fazGet(url){
     let request = new XMLHttpRequest()
     request.open("GET",url,false)
     request.send()
@@ -56,7 +54,7 @@ function criaLinha(usuarios){
 
     return linha;
 }
-function criaLinha(locations){
+function criaLinha(){
     linha = document.createElement("tr");
     tdId = documet.createElement("td");
     tdNome =document.createElement("td");
@@ -68,7 +66,7 @@ function criaLinha(locations){
 
     return linha;
 
-function main() {
+function principal() {
     let data = fazGet("https://rickandmortyapi.com/graphql");
     let usuarios = JSON.parse(data);
     let tabela = document.getElementById("tabela");
@@ -78,13 +76,15 @@ function main() {
         tabela.appendChild(linha);}
 
     
-    }
-main()
+    };
+
+    principal()
+    
 
 
-
+// Get episódios
 import { filterGenderSelected, filterStatusSelected, filterSpeciesSelected, sortOrder, calcFilter } from './data.js';
-import data from './data/rickandmorty/rickandmorty.js';
+import data from './data/https://rickandmortyapi.com/graphql';
 const dataBase = data.results;
 const filterSelect = document.querySelector('.filter-gender');
 const filterSelectStatus = document.querySelector('.filter-status');
@@ -119,7 +119,7 @@ function printCharacters(dados) {
 
 function resultCalc(dataBase, selectedFilter) {
     let result = calcFilter(dataBase, selectedFilter)
-    document.getElementById("calculation").innerHTML = "Existem " + selectedFilter.length + " personagens deste filtro e representam " + result + "% do total de personagens"
+    document.getElementById("episodios").innerHTML = "Existem " + selectedFilter.length + " personagens deste filtro e representam " + result + "% do total de personagens"
 }
 
 function filterGender() {
@@ -144,17 +144,17 @@ function filterSpecies() {
 }
 
 function filterOrder() {
-    document.getElementById("calculation").innerHTML = ""
+    document.getElementById("episodios").innerHTML = ""
     const valueOrderSelected = filterSelectOrder.value
     const selectedOrder = sortOrder(dataBase, valueOrderSelected)
     printCharacters(selectedOrder)
 }
-© 2021 GitHub, Inc.*/
+© 2021 GitHub, Inc.
 
 //Teste Pokemom
-/*
+
 var listaPokemom;
-listaPokemom = document.querySelector("#pokemons");
+listaPokemom = document.querySelector("#episodios");
 function main(){
   const pokemons = ` 
   query {
@@ -183,17 +183,16 @@ function main(){
 }
  
 } `;
-requestApi(pokemons).then(res=> console.log(res));}
+requestApi(episodios).then(res=> showPokemom(res.episodios));}
 
-function showPokemom(pokemons){
+function showPokemom(episodios){
   let template ="";
-  pokemons.forEach(pokemons =>(template+=`
+  pokemons.forEach(episodios =>(template+=`
   <li class="media">
-  <img=class="mr-3" width="100" src="${pokemon.image}">
+  <img=class="mr-3" width="100" src="${episodios.image}">
   <div class="media-body">
   <h4>${pokemons.nome}<h5>
   <button class="btn btn-secondary btn-sm"ver tetalhes></button>" 
   </div>
   </li>`))
-}
-*/
+};

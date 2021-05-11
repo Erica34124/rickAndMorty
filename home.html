@@ -15,10 +15,10 @@
     <script src="pok.js"></script>
     
 </head>
-<body class="bege">
+<body class="bege container">
     <header class="espaco" >
         
-                <!-- Example single danger button -->
+<!-- navegação do site-->
 <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle rosa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Home
@@ -35,20 +35,7 @@
       </ul>
         </div>
   </div>
-  <!-- Example single danger button -->
- 
-  <!--<div class="btn-group">
-    <button type="button" class="btn btn-danger dropdown-toggle azul" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Índice
-    </button>
-    <div class="dropdown-menu">
-    <ul>
-      <li><a class="dropdown-item" href="home.html">Home</a></li>
-      <li><a class="dropdown-item" href="#">índice</a></li>
-    </ul>
 
-        </div>
-  </div> -->
   <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle azul" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       índice
@@ -62,7 +49,7 @@
       
         </div>
   </div>
- <!-- Example single danger button -->
+ 
 
       <div class="btn-group">
       <button type="button" class="btn btn-danger dropdown-toggle vermelho" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -82,7 +69,7 @@
         </div>
       </div>
       
-  <!-- Example single danger button -->
+ 
 <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle verde" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Status
@@ -101,6 +88,7 @@
       
     </div>
   </div>
+  
              
   <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle amarelo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -116,16 +104,15 @@
         <li><a class="dropdown-item" href="teste.html">Teste</a></li>
         <li><a class="dropdown-item" href="personagens.html">Personagens</a></li>  
       </ul>
-   
-         
-      
+
     </div>
   </div>
+  <!--Fim da navegação do site-->
     </header>
     <main class="imagemFundo"><h1></h1></main>
     
     </main>
-    
+    <!--Rodapé do site-->
     <footer> 
       <ul>
         <article class="card-col">
@@ -146,6 +133,7 @@
           </article>
         </ul>
       </footer>    
+      <!-- fim do Rodapé do site-->
     
 </body>
 
