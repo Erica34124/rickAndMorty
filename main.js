@@ -313,7 +313,7 @@ $(document).ready(function(){
   });
 });
 //Validação de dados
-<form action=""id="personagens" method="POST" name="personagens">
+<form action="" id="personagens" method="POST" name="personagens">
 
     function validar() {
       val name="personagens";
