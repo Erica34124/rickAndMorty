@@ -1,4 +1,6 @@
-/*$.getJSON('https://fipe-parallelum.rhcloud.com/api/v1/carros/marcas', function(data) {
+$.getJSON('https://fipe-parallelum.rhcloud.com/api/v1/carros/marcas', 
+
+function(data) {
 
     var select = '<select name="modelos">\
                   <option>Selecione...</option>';
@@ -29,7 +31,7 @@ populateList()
 
 
 
-*/
+/*
 
 
 
@@ -150,7 +152,7 @@ function filterOrder() {
 © 2021 GitHub, Inc.*/
 
 //Teste Pokemom
-
+/*
 var listaPokemom;
 listaPokemom = document.querySelector("#pokemons");
 function main(){
@@ -194,3 +196,4 @@ function showPokemom(pokemons){
   </div>
   </li>`))
 }
+*/
